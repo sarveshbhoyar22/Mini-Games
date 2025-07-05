@@ -1,0 +1,21 @@
+{
+    "rewrites": [
+      {
+        "source": "/welcome",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/hub",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/auth/:path*",
+        "destination": "/api/auth/:path*"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
