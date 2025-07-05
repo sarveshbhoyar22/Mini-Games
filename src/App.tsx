@@ -14,6 +14,7 @@ import SequenceSprint from "./components/SequenceSprint";
 import MemoryMatch from "./components/MemoryMatch";
 import { useFirebase } from "./hooks/useFirebase";
 import { GameType } from "./types/game";
+import Footer from "./components/Footer";
 
 function AppContent() {
   const [initializingUser, setInitializingUser] = useState(false);
@@ -166,6 +167,7 @@ function App() {
   return (
     <Router>
       <AppContent />
+      <Footer />
     </Router>
   );
 }
