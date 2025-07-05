@@ -134,7 +134,8 @@ const HigherLower: React.FC<HigherLowerProps> = ({
       setFeedback(`💥 Game Over! The number was ${targetNumber}`);
       setGameLost(true);
     } else {
-      const direction = guessNum < targetNumber ? "📈 Higher!" : "📉 Lower!";
+      const direction =
+        guessNum < targetNumber ? "📈 Go Higher!" : "📉Go Lower!";
       const proximity = getProximityFeedback(guessNum, targetNumber);
       const distance = Math.abs(guessNum - targetNumber);
       setFeedback(`${direction} ${proximity} `);
